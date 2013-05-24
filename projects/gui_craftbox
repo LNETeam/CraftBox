@@ -1,0 +1,92 @@
+--Developed by LNETeam from LNET Technologies
+
+os.loadAPI("api_craftbox")
+
+local session = {}
+
+function getPrevCmd(look)
+	if not look then return false end
+	for k,v in pairs(session) do
+		if k==look then
+			return v
+		end
+	end
+end
+
+function genUsr(string)
+	if not string then return false end
+	term.setCursorPos(1,3)
+	term.write(string)
+	local input = read()
+	local yx,xy = term.getCursorPos()
+	session.y=xy
+	session.x=yx
+	return input
+end
+
+function genPass(string)
+	if not string then return false end
+	term.setCursorPos(1,4)
+	term.write(string)
+	local pass = read("*")
+	local yx,xy = term.getCursorPos()
+	session.y=xy
+	session.x=yx
+	return pass
+end
+
+function runMenuH(mChoices)
+	local nSelection = 0
+	local bLoop = true
+	
+	while bLoop == true do
+		term.setCursorPos(1,8)
+	
+		for nLine = 0, #mChoices do
+			local sLine = "  "
+			if nSelection == nLine then
+				sLine = "> "
+			end
+			sLine = sLine .. mChoices[nLine]
+			print(sLine)
+		end
+		
+		local sEvent, nKey = os.pullEvent("key")
+		
+		if nKey == 200 then
+			if mChoices[nSelection - 2] then
+				nSelection = nSelection - 2
+			end
+		elseif nKey == 208 then
+			if mChoices[nSelection + 2] then
+				nSelection = nSelection + 2
+			end
+		elseif nKey == 28 then
+			if mChoices[nSelection] then
+				bLoop = false
+				return nSelection
+			end
+		end
+	end
+end
+
+objects={}
+objects.peer = "[Peer-To-Peer]"
+objects.quit = "[Quit]"
+objects.enter = "[Enter]"
+objects.next = "[Next]"
+objects.prev = "[Prev]"
+objects.cancel = "[Cancel]"
+objects.upload = "[Upload]"
+objects.send = "[Send]"
+objects.get = "[Get]"
+objects.list = "[List Files]"
+objects.confirm = "[Confirm?]"
+objects.yes = "[Yes]"
+objects.no = "[No]"
+objects.sess_Hitory = "[View Session Log]"
+objects.modf = "[Modify Profile]"
+objects.modf_pass = "[Change Password]"
+objects.del = "[Delete]"
+objects.clrFile = "[Clear All?]"
+objects.login = "[Login]"

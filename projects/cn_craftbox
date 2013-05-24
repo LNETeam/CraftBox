@@ -1,0 +1,45 @@
+--Developed by LNETeam from LNET Technologies
+
+os.loadAPI("security_craftbox")
+
+function requestBroadcast(string,t)
+	rednet.broadcast(string)
+	p1,p1 = rednet.receive(t)
+	if p2 == nil then
+		return false
+	else
+		return p1,p2
+	end
+end
+
+local function requestSides(specified)
+	req=true
+	if not specified then req=false end
+	for k,v in pairs(rs.getSides()) do
+		if req then
+			if peripheral.getType(v)==specified then
+				return true,v
+			else
+				return false
+			end
+		else
+			if peripheral.getType(v)=="modem" then
+				return true,v
+			else
+				return false
+			end
+		end
+	end
+end
+
+function openRednet()
+	stat,handle = requestSides()
+	if not stat then error("No modems available!") end
+	m = peripheral.wrap(handle)
+	m.open()
+	return true
+end
+
+function authenticate(usrID,pass)
+	return false
+end

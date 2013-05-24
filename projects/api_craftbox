@@ -1,0 +1,45 @@
+--Developed by LNETeam from LNET Technologies
+
+function getCenterX(sText)
+	local nWidth = term.getSize()
+	local x = math.floor(nWidth / 2) - math.floor(string.len(sText) / 2)
+	return x
+end
+ 
+function getCenterY()
+    local nWidth, nHeight = term.getSize()
+    local y = math.floor(nHeight / 2)
+    return y
+end
+
+function pass(path,args) --Args must be a table
+	if type(args) ~= "table" then
+		error("Program call fatal error!")
+	end
+	if args ~= nil then
+		shell.run(path,args)
+	else
+		shell.run(path)
+	end
+end
+
+function spool()
+	local x,y = term.getCursorPos()
+	term.setCursorPos(x,y)
+	term.write("|")
+	sleep(.5)
+	term.setCursorPos(x,y)
+	term.write("-")
+	sleep(.5)
+end
+
+local function resetCol()
+	term.setTextColor(colors.white)
+end
+
+function cerror(string,x,y)
+	term.setCursorPos(x,y)
+	term.setTextColor(colors.red)
+	print(string)
+	resetCol()
+end

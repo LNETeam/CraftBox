@@ -1,0 +1,88 @@
+--Developed by LNETeam from LNET Technologies
+
+pID = os.getComputerID()
+server = {}
+
+--Loads necessary APIs
+os.loadAPI("api_craftbox") --Default APIs
+os.loadAPI("cn_craftbox") --Rednet APIs
+
+cn_craftbox.openRednet()
+
+function resetCol()
+	term.setTextColor(colors.white)
+end
+
+function requestServer()
+	serverID, serverName = cn_craftbox.requestBroadcast("server_socket",3) --edit timing for server response time
+	if not serverID then
+		return false
+	else
+		return serverID,serverName
+	end
+end
+
+function startup()
+	sID,sName = requestServer()
+	if sID ~= false then
+		server.propsID = sID
+		server.propsName = sName
+	else
+		error("")
+	end
+	term.clear()
+	term.setCursorPos(1,1)
+	term.write("Contacting nearest server...")
+	x,y = term.getCursorPos()
+	zWait = 1
+	repeat
+		term.setCursorPos(x,y)
+		api_craftbox.spool()
+		p1,p2 = rednet.receive(.0001)
+		if p2 == "auth" then
+			break
+		end
+		zWait = zWait+1
+		sleep(.0001)
+	until zWait == 10 --Adjust timing here!
+	if zWait == 10 then --This is equal to the above line
+		term.setCursorPos(x,y)
+		term.setTextColor(colors.red)
+		term.write(" Failed to contact nearest server!")
+		reset()
+		term.setCursorPos(1,2)
+		for i=0,189 do
+			textutils.slowWrite(".",2000)
+		end
+		term.clear()
+		term.setCursorPos(1,1)
+		shell.run("shell")
+	else
+		term.setCursorPos(x,y)
+		term.setTextColor(colors.green)
+		term.write("Successfully connected to: "..server.propsName..","..server.propsID.."!")
+		resetCol()
+	end
+
+	--Aestetics
+	Client={}
+	Client.id = pID
+	Client.name = shell.getRunningProgram()
+	Client.time = os.time()
+	Client.isModemOpen = true
+	term.write("\n"..Client.id.." is attached to server")
+	sleep(.5)
+	term.write("\n"..Client.name..": Currently running on Client")
+	sleep(.5)
+	term.write("\n"..Client.time..": Current world time of connect")
+	sleep(.5)
+	term.write("\nStatus of modem: "..Client.isModemOpen)
+	sleep(.5)
+	textutils.slowWrite("Starting Client GUI...", 15)
+
+	--Passes program handling to 'login_craftbox' class
+	api_craftbox.pass("login_craftbox",server.propsID,server.propsName)
+end
+
+running = false
+startup()
