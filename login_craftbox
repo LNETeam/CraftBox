@@ -1,0 +1,75 @@
+os.loadAPI("api_craftbox")--customary API loading
+os.loadAPI("cn_craftbox")--rednet handling
+os.loadAPI("gui_craftbox")--gui handling
+os.loadAPI("security_craftbox")--block-handling and general security
+
+security_craftbox.block(os.getComputerID())
+session_storage={}
+
+logo = [[
+
+		$     $   $  $$$$ $$$$$
+		$     $$  $  $      $
+		$     $ $ $  $$$$   $
+		$	  $  $$  $      $
+		$$$$$ $   $  $$$$   $
+]]
+
+--import server objects
+
+sArgs={...}
+
+if sArgs[2]~="no" then
+	ct=0
+	logged_in = false
+end
+
+--Initial
+while true do
+	term.clear()
+	term.setCursorPos(1,6)
+	if ct ~=0 then
+		print("Attempts: "..ct.."/5")
+	end
+	term.setCursorPos(1,1)
+	print("  Login  ")
+	print("---------")
+
+	--Get user input
+	usr = gui_craftbox.genUsr("Username: ")--puts a usr gui for the user to login to
+	pass = gui_craftbox.genPass("Password: ")--puts a pass gui for the user to login to
+
+	estX = string.len(usr.."Username: ")+1--gets the length of what they entered and username for the conditional 'cerror' below
+	y = gui_craftbox.getPrevCmd("y")-2
+
+	--Authentication takes place
+	if not cn_craftbox.authenticate(usr,pass) then 
+		api_craftbox.cerror(" **Incorrect username/password!**",estX,y)
+		nope = security_craftbox.tryCount(ct)
+		if nope==false then
+			break
+		end
+		ct=ct+1
+		sleep(4) 
+		shell.run(shell.getRunningProgram(),textutils.serialize(sArgs),"no")
+	else --checks credentials against servers
+		logged_in=true
+		session_storage.user=usr
+		session_storage.passw=pass
+		break
+	end
+end
+
+if nope==false then
+	local x,y = term.getCursorPos()
+	api_craftbox.cerror("**Sorry you have maxed out your trys right now**",1,8)
+	sleep(5)
+	security_craftbox.block(os.getComputerID(),true)
+	term.clear()
+	term.setCursorPos(1,1)
+	shell.run("shell")
+end
+
+if logged_in then
+	api_craftbox.pass("home_craftbox",session_storage,sArgs)
+end
