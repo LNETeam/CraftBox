@@ -36,7 +36,7 @@ function openRednet()
 	stat,handle = requestSides()
 	if not stat then error("No modems available!") end
 	m = peripheral.wrap(handle)
-	m.open()
+	m.open(35565)
 	return true
 end
 

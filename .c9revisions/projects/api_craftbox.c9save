@@ -2,3 +2,4 @@
 {"contributors":[],"silentsave":true,"ts":1369438608346,"patch":[[{"diffs":[[0,"nologies"],[1," this "],[0,"\n\nfuncti"]],"start1":37,"start2":37,"length1":16,"length2":22}]],"length":853,"saved":false}
 {"ts":1369438608762,"patch":[[{"diffs":[[0,"es this "],[1,"wa"],[0,"\n\nfuncti"]],"start1":43,"start2":43,"length1":16,"length2":18}]],"length":855,"saved":false}
 {"ts":1369438610662,"patch":[[{"diffs":[[0," this wa"],[1,"s added"],[0,"\n\nfuncti"]],"start1":45,"start2":45,"length1":16,"length2":23}]],"length":862,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1369511840018,"patch":[[{"diffs":[[0,"gies"],[-1," this was added"],[0,"\n\nfu"]],"start1":41,"start2":41,"length1":23,"length2":8},{"diffs":[[0,"setCol()\nend"],[1,"\n"]],"start1":835,"start2":835,"length1":12,"length2":13}]],"length":848,"saved":false}
