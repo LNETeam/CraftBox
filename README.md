@@ -13,3 +13,5 @@ Co-Developed:
 
 Scripts are property of LNET Technologies and their respective owners.
 If anyone would like to use a script, please contact me at: austin@laneynet.com or P.M. me from CC Forums.
+
+©LNET Technologies 2013
