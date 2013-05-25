@@ -5,6 +5,7 @@ os.loadAPI("security_craftbox")--block-handling and general security
 
 security_craftbox.block(os.getComputerID())
 session_storage={}
+can = gui_craftbox.returnKey('cancelq')
 
 logo = [[
 
@@ -50,8 +51,21 @@ while true do
 			break
 		end
 		ct=ct+1
-		sleep(4) 
-		shell.run(shell.getRunningProgram(),textutils.serialize(sArgs),"no")
+		sleep(.01)
+		print()
+		print()
+		print() 
+		print(can)
+		p = {os.pullEvent()}
+		if p[1] == 'key' and p[2]~=keys.y then
+			sleep(.5)
+			shell.run(shell.getRunningProgram(),textutils.serialize(sArgs),"no")
+		elseif p[1] == 'key' and p[2] == keys.y then
+			sleep(.5)
+			term.clear()
+			term.setCursorPos(1,1)
+			shell.run("shell")
+		end
 	else --checks credentials against servers
 		logged_in=true
 		session_storage.user=usr

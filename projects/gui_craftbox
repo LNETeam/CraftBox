@@ -77,6 +77,7 @@ objects.enter = "[Enter]"
 objects.next = "[Next]"
 objects.prev = "[Prev]"
 objects.cancel = "[Cancel]"
+objects.cancelq = "[Cancel?]"
 objects.upload = "[Upload]"
 objects.send = "[Send]"
 objects.get = "[Get]"
@@ -90,3 +91,9 @@ objects.modf_pass = "[Change Password]"
 objects.del = "[Delete]"
 objects.clrFile = "[Clear All?]"
 objects.login = "[Login]"
+
+function returnKey(objName)
+	if not objName then return 'No such object' end
+	c = objects[objName]
+	return c
+end
