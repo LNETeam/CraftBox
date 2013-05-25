@@ -1,4 +1,4 @@
---Developed by LNETeam from LNET Technologiess
+--Developed by LNETeam from LNET Technologies
 
 function getCenterX(sText)
 	local nWidth = term.getSize()
