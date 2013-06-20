@@ -49,7 +49,7 @@ function startup()
 		term.setCursorPos(x,y)
 		term.setTextColor(colors.red)
 		term.write(" Failed to contact nearest server!")
-		reset()
+		resetCol()
 		term.setCursorPos(1,2)
 		for i=0,189 do
 			textutils.slowWrite(".",2000)
