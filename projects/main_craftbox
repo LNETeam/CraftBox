@@ -3,6 +3,11 @@
 pID = os.getComputerID()
 server = {}
 
+--Require http protocol to be Enabled
+if not http then
+   error('Please enable HTTP API in configuration file.')
+end
+
 --Loads necessary APIs
 os.loadAPI("api_craftbox") --Default APIs
 os.loadAPI("cn_craftbox") --Rednet APIs
@@ -49,7 +54,7 @@ function startup()
 		term.setCursorPos(x,y)
 		term.setTextColor(colors.red)
 		term.write(" Failed to contact nearest server!")
-		reset()
+		resetCol()
 		term.setCursorPos(1,2)
 		for i=0,189 do
 			textutils.slowWrite(".",2000)

@@ -1,0 +1,49 @@
+--Developed by LNETeam from LNET Technologies
+
+function tryCount(count)
+	count=tonumber(count)
+	local base=5 --Change based on how many login attempts you want...
+	if count < base then
+		return true
+	elseif count==base then
+		return false
+	end
+end
+
+--Gets encryption software StrUtils
+function getStrUtils()
+	if not fs.exists("/~temp/StrUtils") then
+		if not fs.exists("/~temp") then
+			fs.makeDir("/~temp")
+		else
+			fs.delete("/~temp")
+			fs.makeDir("/~temp")
+		end
+		shell.run("pastebin","get","5B77snmj","/~temp/StrUtils")
+	else
+		return true
+	end
+end
+
+function block(ids,reg)
+	if not ids then return false end
+	if not fs.exists("blacklist") and reg==true then
+		local blockd = tostring(ids)
+		local blockStart = tostring(os.time())
+		block="block = {id="..blockd..",time=5,start="..blockStart.."}"
+		han = io.open("blacklist","w")
+		han:write(block)
+		han:close()
+	else
+		if fs.exists("blacklist") then
+			shell.run("blacklist")
+			add = block.time+block.start
+			fin = add-os.time()
+			if block.id==ids and not os.time()==add then
+				error("You are currently prohibited from CCraftBox. Please wait "..fin)
+			else
+				fs.delete("blacklist")
+			end
+		end
+	end
+end
