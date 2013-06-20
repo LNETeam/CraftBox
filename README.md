@@ -22,4 +22,4 @@ ComputerCraft is in no way affiliated with LNET Technologies. We use the mod to 
 
 Minecraft and Mojang are in no way affiliated with LNET Technologies.
 
-2013 LNET Technologies
+© 2013 LNET Technologies
