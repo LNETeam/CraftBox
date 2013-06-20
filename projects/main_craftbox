@@ -3,6 +3,11 @@
 pID = os.getComputerID()
 server = {}
 
+--Require http protocol to be Enabled
+if not http then
+   error('Please enable HTTP API in configuration file.')
+end
+
 --Loads necessary APIs
 os.loadAPI("api_craftbox") --Default APIs
 os.loadAPI("cn_craftbox") --Rednet APIs

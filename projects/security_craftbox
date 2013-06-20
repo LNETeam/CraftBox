@@ -19,7 +19,7 @@ function getStrUtils()
 			fs.delete("/~temp")
 			fs.makeDir("/~temp")
 		end
-		shell.run("pastebin","get","--Enter pastebin addr","/~temp/StrUtils")
+		shell.run("pastebin","get","5B77snmj","/~temp/StrUtils")
 	else
 		return true
 	end
