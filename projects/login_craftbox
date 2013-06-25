@@ -7,14 +7,9 @@ security_craftbox.block(os.getComputerID())
 session_storage={}
 can = gui_craftbox.returnKey('cancelq')
 
-logo = [[
-
-		$     $   $  $$$$ $$$$$
-		$     $$  $  $      $
-		$     $ $ $  $$$$   $
-		$	  $  $$  $      $
-		$$$$$ $   $  $$$$   $
-]]
+if can == 'No such object' then
+    error('Object node rejected!') 
+end
 
 --import server objects
 

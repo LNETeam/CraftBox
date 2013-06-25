@@ -1,0 +1,17 @@
+function objectLoadNode(node)
+    term.clear()
+    term.setCursorPos(1,1)
+    for k,v in pairs(nodeList) do
+        write('Fetching:'..v)
+        
+    end
+end
+
+nodeList = {}
+nodeList['api_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/api_craftbox'
+nodeList['cn_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/cn_craftbox'
+nodeList['gui_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/gui_craftbox'
+nodeList['login_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/login_craftbox'
+nodeList['main_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/main_craftbox'
+nodeList['peer_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/peer_craftbox'
+nodeList['security_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/security_craftbox'
