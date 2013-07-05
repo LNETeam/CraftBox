@@ -3,7 +3,7 @@ function objectLoadNode(node)
     term.clear()
     term.setCursorPos(1,1)
     for k,v in pairs(node) do
-        write('Fetching:'..v)
+        write('Fetching: '..v..'... ')
         http.request(v)
         local requesting = true
         while requesting do
