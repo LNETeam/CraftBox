@@ -1,9 +1,10 @@
 function objectLoadNode(node)
+    if not node or not type(node) == 'table' then error('Protocol Error!') end
     term.clear()
     term.setCursorPos(1,1)
-    for k,v in pairs(nodeList) do
+    for k,v in pairs(node) do
         write('Fetching:'..v)
-        
+        http.request(v)
     end
 end
 
