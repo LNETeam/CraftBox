@@ -5,14 +5,33 @@ function objectLoadNode(node)
     for k,v in pairs(node) do
         write('Fetching:'..v)
         http.request(v)
+        local requesting = true
+        while requesting do
+            local event, url, sourceText = os.pullEvent()
+            if event == "http_success" then
+                local respondedText = sourceText.readAll()
+                temp = io.open(k,'w')
+                temp:write(respondedText)
+                temp:close()
+                print('Successfully installed!\n')
+                requesting = false
+            elseif event == "http_failure" then
+                print("Fetch failed...\n")
+                requesting = false
+            end
+        end
     end
+    return true
 end
 
 nodeList = {}
-nodeList['api_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/api_craftbox'
-nodeList['cn_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/cn_craftbox'
-nodeList['gui_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/gui_craftbox'
-nodeList['login_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/login_craftbox'
-nodeList['main_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/main_craftbox'
-nodeList['peer_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/peer_craftbox'
-nodeList['security_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/master/projects/security_craftbox'
+nodeList['api_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/api_craftbox'
+nodeList['cn_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/cn_craftbox'
+nodeList['gui_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/gui_craftbox'
+nodeList['login_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/login_craftbox'
+nodeList['main_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/main_craftbox'
+nodeList['peer_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/peer_craftbox'
+nodeList['security_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/security_craftbox'
+
+stat = objectLoadNode(nodeList)
+if not stat then error('Function execution error') end
