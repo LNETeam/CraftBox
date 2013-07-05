@@ -51,6 +51,7 @@ while true do
 		print()
 		print() 
 		print(can)
+        timer = os.startTimer(3)
 		p = {os.pullEvent()}
 		if p[1] == 'key' and p[2]~=keys.y then
 			sleep(.5)
@@ -60,7 +61,10 @@ while true do
 			term.clear()
 			term.setCursorPos(1,1)
 			shell.run("shell")
-		end
+		elseif p[1] == 'timer' then
+            sleep(.5)
+    		shell.run(shell.getRunningProgram(),textutils.serialize(sArgs),"no")
+        end
 	else --checks credentials against servers
 		logged_in=true
 		session_storage.user=usr
