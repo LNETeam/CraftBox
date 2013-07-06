@@ -36,7 +36,7 @@ function block(ids,reg)
 		han:close()
 	else
 		if fs.exists("blacklist") then
-			os.run("blacklist")
+			os.run({}, "blacklist")
 			add = block.time+block.start
 			fin = add-os.time()
 			if block.id==ids and not os.time()==add then

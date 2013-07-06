@@ -3,6 +3,8 @@
 os.loadAPI("security_craftbox")
 
 function requestBroadcast(string,t)
+    local stat,side = requestSides()
+    rednet.open(side)
 	rednet.broadcast(string)
 	p1,p1 = rednet.receive(t)
 	if p2 == nil then
