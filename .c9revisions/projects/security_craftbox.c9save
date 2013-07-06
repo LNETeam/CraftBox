@@ -103,3 +103,5 @@
 {"ts":1373136461012,"patch":[[{"diffs":[[0,"d = "],[-1,"tostring("],[0,"ids)"]],"start1":678,"start2":678,"length1":17,"length2":8}]],"length":1342,"saved":false}
 {"ts":1373136462438,"patch":[[{"diffs":[[0,"kd = ids"],[-1,")"],[0,"\n\t\tlocal"]],"start1":677,"start2":677,"length1":17,"length2":16}]],"length":1341,"saved":false}
 {"ts":1373136608965,"patch":[[{"diffs":[[0,"run({},\""],[-1,"/"],[0,"blacklis"]],"start1":899,"start2":899,"length1":17,"length2":16}]],"length":1340,"saved":false}
+{"ts":1373136834269,"patch":[[{"diffs":[[0,"\t\tif fs.exists(\""],[1,"/"],[0,"blacklist\") then"]],"start1":860,"start2":860,"length1":32,"length2":33}]],"length":1341,"saved":false}
+{"ts":1373136838195,"patch":[[{"diffs":[[0,"run({},\""],[1,"/"],[0,"blacklis"]],"start1":900,"start2":900,"length1":16,"length2":17}]],"length":1342,"saved":false}
