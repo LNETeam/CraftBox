@@ -42,8 +42,9 @@ function block(ids,reg)
                 error('Ban write time') 
             end
 			add = blocks.timed+blocks.start
+            if not blocks.id then error('Probs')
 			fin = add-os.time()
-			if block.id==ids and not os.time()==add then
+			if blocks.id==ids and not os.time()==add then
 				error("You are currently prohibited from CCraftBox. Please wait "..fin)
 			else
 				fs.delete("blacklist")
