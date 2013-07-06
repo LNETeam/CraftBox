@@ -1,1 +1,96 @@
 {"ts":1369511335158,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"CCraftBox\n========\n\nCo-Developed Program\n\n\nProgram Developed by LNET Technologies.\nCo-Developed: \n      Snakybo\n      Conn332\n      PixelToast\n      zekesonxx\n\nScripts are property of LNET Technologies and their respective owners.\nIf anyone would like to use a script, please contact me at: austin@laneynet.com or P.M. me from CC Forums.\n"]],"start1":0,"start2":0,"length1":0,"length2":338}]],"length":338}
+{"contributors":[],"silentsave":true,"ts":1371747872493,"patch":[[{"diffs":[[0,"Forums.\n"],[1,"\n013 LNET Technologies\n"]],"start1":330,"start2":330,"length1":8,"length2":31}]],"length":361,"saved":false}
+{"ts":1371747878615,"patch":[[{"diffs":[[0,"orums.\n\n"],[1,"2"],[0,"013 LNET"]],"start1":331,"start2":331,"length1":16,"length2":17}]],"length":362,"saved":false}
+{"ts":1371747888558,"patch":[[{"diffs":[[0,"orums.\n\n"],[1,"\n\n"],[0,"2013 LNE"]],"start1":331,"start2":331,"length1":16,"length2":18}]],"length":364,"saved":false}
+{"ts":1371747891897,"patch":[[{"diffs":[[0,"orums.\n\n"],[1,"b"],[0,"\n\n2013 L"]],"start1":331,"start2":331,"length1":16,"length2":17}]],"length":365,"saved":false}
+{"ts":1371747892896,"patch":[[{"diffs":[[0,"orums.\n\n"],[-1,"b"],[0,"\n\n2013 L"]],"start1":331,"start2":331,"length1":17,"length2":16}]],"length":364,"saved":false}
+{"ts":1371747900147,"patch":[[{"diffs":[[0,"orums.\n\n"],[1,"S"],[0,"\n\n2013 L"]],"start1":331,"start2":331,"length1":16,"length2":17}]],"length":365,"saved":false}
+{"ts":1371747900837,"patch":[[{"diffs":[[0,"rums.\n\nS"],[1,"t"],[0,"\n\n2013 L"]],"start1":332,"start2":332,"length1":16,"length2":17}]],"length":366,"saved":false}
+{"ts":1371747902375,"patch":[[{"diffs":[[0,"ums.\n\nSt"],[1,"rUtil;"],[0,"\n\n2013 L"]],"start1":333,"start2":333,"length1":16,"length2":22}]],"length":372,"saved":false}
+{"ts":1371747903462,"patch":[[{"diffs":[[0,"Util"],[-1,";"],[1,"s"],[0,"\n\n20"]],"start1":342,"start2":342,"length1":9,"length2":9}]],"length":372,"saved":false}
+{"ts":1371747906204,"patch":[[{"diffs":[[0,"StrUtils"],[1," ()"],[0,"\n\n2013 L"]],"start1":339,"start2":339,"length1":16,"length2":19}]],"length":375,"saved":false}
+{"ts":1371747910186,"patch":[[{"diffs":[[0,"rUtils ("],[1,"used in security"],[0,")\n\n2013 "]],"start1":341,"start2":341,"length1":16,"length2":32}]],"length":391,"saved":false}
+{"ts":1371747911645,"patch":[[{"diffs":[[0,"security"],[1,"_c"],[0,")\n\n2013 "]],"start1":357,"start2":357,"length1":16,"length2":18}]],"length":393,"saved":false}
+{"ts":1371747912280,"patch":[[{"diffs":[[0,"curity_c"],[1,"ra"],[0,")\n\n2013 "]],"start1":359,"start2":359,"length1":16,"length2":18}]],"length":395,"saved":false}
+{"ts":1371747913140,"patch":[[{"diffs":[[0,"rity_cra"],[1,"ftb"],[0,")\n\n2013 "]],"start1":361,"start2":361,"length1":16,"length2":19}]],"length":398,"saved":false}
+{"ts":1371747914165,"patch":[[{"diffs":[[0,"y_craftb"],[1,"ox"],[0,")\n\n2013 "]],"start1":364,"start2":364,"length1":16,"length2":18}]],"length":400,"saved":false}
+{"ts":1371747915969,"patch":[[{"diffs":[[0,"raftbox)"],[1," is n"],[0,"\n\n2013 L"]],"start1":367,"start2":367,"length1":16,"length2":21}]],"length":405,"saved":false}
+{"ts":1371747921296,"patch":[[{"diffs":[[0,"box) is "],[-1,"n"],[1,"in no"],[0,"\n\n2013 L"]],"start1":371,"start2":371,"length1":17,"length2":21}]],"length":409,"saved":false}
+{"ts":1371747921624,"patch":[[{"diffs":[[0,"is in no"],[1," "],[0,"\n\n2013 L"]],"start1":376,"start2":376,"length1":16,"length2":17}]],"length":410,"saved":false}
+{"ts":1371747923636,"patch":[[{"diffs":[[0,"s in no "],[1,"way "],[0,"\n\n2013 L"]],"start1":377,"start2":377,"length1":16,"length2":20}]],"length":414,"saved":false}
+{"ts":1371747930550,"patch":[[{"diffs":[[0," no way "],[1,"affiliated w"],[0,"\n\n2013 L"]],"start1":381,"start2":381,"length1":16,"length2":28}]],"length":426,"saved":false}
+{"ts":1371747935710,"patch":[[{"diffs":[[0,"liated w"],[1,"ith LNET Technologies"],[0,"\n\n2013 L"]],"start1":393,"start2":393,"length1":16,"length2":37}]],"length":447,"saved":false}
+{"ts":1371747942846,"patch":[[{"diffs":[[0,"nologies"],[1,". It is the sole"],[0,"\n\n2013 L"]],"start1":414,"start2":414,"length1":16,"length2":32}]],"length":463,"saved":false}
+{"ts":1371747943742,"patch":[[{"diffs":[[0,"the sole"],[1," "],[0,"\n\n2013 L"]],"start1":430,"start2":430,"length1":16,"length2":17}]],"length":464,"saved":false}
+{"ts":1371747947110,"patch":[[{"diffs":[[0,"he sole "],[1,"property of"],[0,"\n\n2013 L"]],"start1":431,"start2":431,"length1":16,"length2":27}]],"length":475,"saved":false}
+{"ts":1371747970651,"patch":[[{"diffs":[[0,"perty of"],[1," 'Thomas F"],[0,"\n\n2013 L"]],"start1":442,"start2":442,"length1":16,"length2":26}]],"length":485,"saved":false}
+{"ts":1371747972160,"patch":[[{"diffs":[[0,"Thomas F"],[1,"arr'"],[0,"\n\n2013 L"]],"start1":452,"start2":452,"length1":16,"length2":20}]],"length":489,"saved":false}
+{"ts":1371747974831,"patch":[[{"diffs":[[0,"as Farr'"],[1,". "],[0,"\n\n2013 L"]],"start1":456,"start2":456,"length1":16,"length2":18}]],"length":491,"saved":false}
+{"ts":1371747978701,"patch":[[{"diffs":[[0," Farr'. "],[1,"We "],[0,"\n\n2013 L"]],"start1":458,"start2":458,"length1":16,"length2":19}]],"length":494,"saved":false}
+{"ts":1371747982764,"patch":[[{"diffs":[[0,"rr'. We "],[1,"use under proper"],[0,"\n\n2013 L"]],"start1":461,"start2":461,"length1":16,"length2":32}]],"length":510,"saved":false}
+{"ts":1371747986245,"patch":[[{"diffs":[[0,"proper\n\n"],[1,"\n"],[0,"2013 LNE"]],"start1":479,"start2":479,"length1":16,"length2":17}]],"length":511,"saved":false}
+{"ts":1371747988521,"patch":[[{"diffs":[[0," proper\n"],[1,"license a"],[0,"\n\n2013 L"]],"start1":478,"start2":478,"length1":16,"length2":25}]],"length":520,"saved":false}
+{"ts":1371747989443,"patch":[[{"diffs":[[0,"icense a"],[1,"gr"],[0,"\n\n2013 L"]],"start1":487,"start2":487,"length1":16,"length2":18}]],"length":522,"saved":false}
+{"ts":1371747991200,"patch":[[{"diffs":[[0,"ense agr"],[1,"eement "],[0,"\n\n2013 L"]],"start1":489,"start2":489,"length1":16,"length2":23}]],"length":529,"saved":false}
+{"ts":1371747996007,"patch":[[{"diffs":[[0,"greement"],[1,"."],[0," \n\n2013 "]],"start1":495,"start2":495,"length1":16,"length2":17}]],"length":530,"saved":false}
+{"ts":1371747996960,"patch":[[{"diffs":[[0,"eement. "],[1,"We "],[0,"\n\n2013 L"]],"start1":497,"start2":497,"length1":16,"length2":19}]],"length":533,"saved":false}
+{"ts":1371747997858,"patch":[[{"diffs":[[0,"ent. We "],[1,"pro"],[0,"\n\n2013 L"]],"start1":500,"start2":500,"length1":16,"length2":19}]],"length":536,"saved":false}
+{"ts":1371748001081,"patch":[[{"diffs":[[0,". We pro"],[1,"vide out own l"],[0,"\n\n2013 L"]],"start1":503,"start2":503,"length1":16,"length2":30}]],"length":550,"saved":false}
+{"ts":1371748001928,"patch":[[{"diffs":[[0,"out own "],[-1,"l"],[0,"\n\n2013 L"]],"start1":516,"start2":516,"length1":17,"length2":16}]],"length":549,"saved":false}
+{"ts":1371748003709,"patch":[[{"diffs":[[0,"out own "],[1,"paste"],[0,"\n\n2013 L"]],"start1":516,"start2":516,"length1":16,"length2":21}]],"length":554,"saved":false}
+{"ts":1371748007468,"patch":[[{"diffs":[[0,"wn paste"],[1,"bin link for e"],[0,"\n\n2013 L"]],"start1":521,"start2":521,"length1":16,"length2":30}]],"length":568,"saved":false}
+{"ts":1371748010440,"patch":[[{"diffs":[[0,"nk for e"],[1,"ase "],[0,"\n\n2013 L"]],"start1":535,"start2":535,"length1":16,"length2":20}]],"length":572,"saved":false}
+{"ts":1371748018140,"patch":[[{"diffs":[[0,"or ease "],[1,"of access. If you have any questions "],[0,"\n\n2013 L"]],"start1":539,"start2":539,"length1":16,"length2":53}]],"length":609,"saved":false}
+{"ts":1371748023532,"patch":[[{"diffs":[[0,"estions "],[1,"about this "],[0,"\n\n2013 L"]],"start1":576,"start2":576,"length1":16,"length2":27}]],"length":620,"saved":false}
+{"ts":1371748027769,"patch":[[{"diffs":[[0,"ut this "],[1,"program c"],[0,"\n\n2013 L"]],"start1":587,"start2":587,"length1":16,"length2":25}]],"length":629,"saved":false}
+{"ts":1371748028310,"patch":[[{"diffs":[[0,"rogram c"],[1,"o"],[0,"\n\n2013 L"]],"start1":596,"start2":596,"length1":16,"length2":17}]],"length":630,"saved":false}
+{"ts":1371748030294,"patch":[[{"diffs":[[0,"ogram co"],[1,"ntact "],[0,"\n\n2013 L"]],"start1":597,"start2":597,"length1":16,"length2":22}]],"length":636,"saved":false}
+{"ts":1371748030986,"patch":[[{"diffs":[[0," contact"],[-1," "],[1,":"],[0,"\n\n2013 L"]],"start1":602,"start2":602,"length1":17,"length2":17}]],"length":636,"saved":false}
+{"ts":1371748031817,"patch":[[{"diffs":[[0,"contact:"],[1," "],[0,"\n\n2013 L"]],"start1":603,"start2":603,"length1":16,"length2":17}]],"length":637,"saved":false}
+{"ts":1371748042398,"patch":[[{"diffs":[[0,"ontact: "],[1,"arr.thomas@gmail.com"],[0,"\n\n2013 L"]],"start1":604,"start2":604,"length1":16,"length2":36}]],"length":657,"saved":false}
+{"ts":1371748045213,"patch":[[{"diffs":[[0,"ontact: "],[1,"f"],[0,"arr.thom"]],"start1":604,"start2":604,"length1":16,"length2":17}]],"length":658,"saved":false}
+{"ts":1371748047959,"patch":[[{"diffs":[[0,"il.com\n\n"],[1,"\n"],[0,"2013 LNE"]],"start1":627,"start2":627,"length1":16,"length2":17}]],"length":659,"saved":false}
+{"ts":1371748050360,"patch":[[{"diffs":[[0,"mail.com"],[1,"."],[0,"\n\n\n2013 "]],"start1":625,"start2":625,"length1":16,"length2":17}]],"length":660,"saved":false}
+{"ts":1371748053820,"patch":[[{"diffs":[[0,"il.com.\n"],[1,"Please do n"],[0,"\n\n2013 L"]],"start1":627,"start2":627,"length1":16,"length2":27}]],"length":671,"saved":false}
+{"ts":1371748056327,"patch":[[{"diffs":[[0,"ase do n"],[1,"ot contact "],[0,"\n\n2013 L"]],"start1":638,"start2":638,"length1":16,"length2":27}]],"length":682,"saved":false}
+{"ts":1371748061789,"patch":[[{"diffs":[[0,"contact "],[1,"LNE"],[0,"\n\n2013 L"]],"start1":649,"start2":649,"length1":16,"length2":19}]],"length":685,"saved":false}
+{"ts":1371748062689,"patch":[[{"diffs":[[0,"tact LNE"],[1,"Te"],[0,"\n\n2013 L"]],"start1":652,"start2":652,"length1":16,"length2":18}]],"length":687,"saved":false}
+{"ts":1371748069565,"patch":[[{"diffs":[[0,"ct LNETe"],[1,"am about usage or licensing "],[0,"\n\n2013 L"]],"start1":654,"start2":654,"length1":16,"length2":44}]],"length":715,"saved":false}
+{"ts":1371748071255,"patch":[[{"diffs":[[0,"censing "],[1,"f"],[0,"\n\n2013 L"]],"start1":682,"start2":682,"length1":16,"length2":17}]],"length":716,"saved":false}
+{"ts":1371748072683,"patch":[[{"diffs":[[0,"icensing"],[-1," f"],[1,"."],[0,"\n\n2013 L"]],"start1":681,"start2":681,"length1":18,"length2":17}]],"length":715,"saved":false}
+{"ts":1371748084535,"patch":[[{"diffs":[[0," We use "],[1,"it "],[0,"under pr"]],"start1":465,"start2":465,"length1":16,"length2":19}]],"length":718,"saved":false}
+{"ts":1371748089224,"patch":[[{"diffs":[[0,"ovide ou"],[-1,"t"],[1,"r"],[0," own pas"]],"start1":513,"start2":513,"length1":17,"length2":17}]],"length":718,"saved":false}
+{"ts":1371748108799,"patch":[[{"diffs":[[0,"ontact: "],[1,"'"],[0,"farr.tho"]],"start1":607,"start2":607,"length1":16,"length2":17}]],"length":719,"saved":false}
+{"ts":1371748110759,"patch":[[{"diffs":[[0,"mail.com"],[1,"'"],[0,".\nPlease"]],"start1":629,"start2":629,"length1":16,"length2":17}]],"length":720,"saved":false}
+{"ts":1371748113033,"patch":[[{"diffs":[[0,"nsing.\n\n"],[1,"\n"],[0,"2013 LNE"]],"start1":689,"start2":689,"length1":16,"length2":17}]],"length":721,"saved":false}
+{"ts":1371748115414,"patch":[[{"diffs":[[0,"nologies"],[-1,"\n"]],"start1":712,"start2":712,"length1":9,"length2":8}]],"length":720,"saved":false}
+{"ts":1371748116991,"patch":[[{"diffs":[[0,"sing.\n\n\n"],[1,"\n"],[0,"2013 LNE"]],"start1":690,"start2":690,"length1":16,"length2":17}]],"length":721,"saved":false}
+{"ts":1371748134430,"patch":[[{"diffs":[[0,"nsing.\n\n"],[1,"Computerc"],[0,"\n\n2013 L"]],"start1":689,"start2":689,"length1":16,"length2":25}]],"length":730,"saved":false}
+{"ts":1371748139857,"patch":[[{"diffs":[[0,"Computer"],[-1,"c"],[1,"Craft is in n"],[0,"\n\n2013 L"]],"start1":697,"start2":697,"length1":17,"length2":29}]],"length":742,"saved":false}
+{"ts":1371748143007,"patch":[[{"diffs":[[0," is in n"],[1,"o way affiliated "],[0,"\n\n2013 L"]],"start1":710,"start2":710,"length1":16,"length2":33}]],"length":759,"saved":false}
+{"ts":1371748147238,"patch":[[{"diffs":[[0,"iliated "],[1,"with LNET Teach"],[0,"\n\n2013 L"]],"start1":727,"start2":727,"length1":16,"length2":31}]],"length":774,"saved":false}
+{"ts":1371748149623,"patch":[[{"diffs":[[0,"T Te"],[-1,"ach"],[1,"c"],[0,"\n\n20"]],"start1":743,"start2":743,"length1":11,"length2":9}]],"length":772,"saved":false}
+{"ts":1371748150406,"patch":[[{"diffs":[[0,"LNET Tec"],[1,"h"],[0,"\n\n2013 L"]],"start1":740,"start2":740,"length1":16,"length2":17}]],"length":773,"saved":false}
+{"ts":1371748154042,"patch":[[{"diffs":[[0,"NET Tech"],[1,"nologies "],[0,"\n\n2013 L"]],"start1":741,"start2":741,"length1":16,"length2":25}]],"length":782,"saved":false}
+{"ts":1371748158550,"patch":[[{"diffs":[[0,"nologies"],[1,". We"],[0," \n\n2013 "]],"start1":749,"start2":749,"length1":16,"length2":20}]],"length":786,"saved":false}
+{"ts":1371748162364,"patch":[[{"diffs":[[0,"ies. We "],[1,"use the mod to create "],[0,"\n\n2013 L"]],"start1":754,"start2":754,"length1":16,"length2":38}]],"length":808,"saved":false}
+{"ts":1371748172953,"patch":[[{"diffs":[[0," create "],[1,"programs f"],[0,"\n\n2013 L"]],"start1":776,"start2":776,"length1":16,"length2":26}]],"length":818,"saved":false}
+{"ts":1371748174397,"patch":[[{"diffs":[[0,"ograms f"],[1,"or the "],[0,"\n\n2013 L"]],"start1":786,"start2":786,"length1":16,"length2":23}]],"length":825,"saved":false}
+{"ts":1371748176464,"patch":[[{"diffs":[[0,"for the "],[1,"Minecraft"],[0,"\n\n2013 L"]],"start1":793,"start2":793,"length1":16,"length2":25}]],"length":834,"saved":false}
+{"ts":1371748177713,"patch":[[{"diffs":[[0,"inecraft"],[1,"er"],[0,"\n\n2013 L"]],"start1":802,"start2":802,"length1":16,"length2":18}]],"length":836,"saved":false}
+{"ts":1371748180175,"patch":[[{"diffs":[[0,"ecrafter"],[1," to use a"],[0,"\n\n2013 L"]],"start1":804,"start2":804,"length1":16,"length2":25}]],"length":845,"saved":false}
+{"ts":1371748181245,"patch":[[{"diffs":[[0,"to use a"],[1,"nd "],[0,"\n\n2013 L"]],"start1":813,"start2":813,"length1":16,"length2":19}]],"length":848,"saved":false}
+{"ts":1371748183965,"patch":[[{"diffs":[[0,"use and "],[1,"enjoy.\n\nM"],[0,"\n\n2013 L"]],"start1":816,"start2":816,"length1":16,"length2":25}]],"length":857,"saved":false}
+{"ts":1371748185311,"patch":[[{"diffs":[[0,"enjoy.\n\n"],[-1,"M"],[0,"\n\n2013 L"]],"start1":824,"start2":824,"length1":17,"length2":16}]],"length":856,"saved":false}
+{"ts":1371748187238,"patch":[[{"diffs":[[0,"enjoy.\n\n"],[1,"Minecraft "],[0,"\n\n2013 L"]],"start1":824,"start2":824,"length1":16,"length2":26}]],"length":866,"saved":false}
+{"ts":1371748189827,"patch":[[{"diffs":[[0,"necraft "],[1,"or Mojang "],[0,"\n\n2013 L"]],"start1":834,"start2":834,"length1":16,"length2":26}]],"length":876,"saved":false}
+{"ts":1371748194210,"patch":[[{"diffs":[[0," Mojang "],[1,"is in no way affiliated w"],[0,"\n\n2013 L"]],"start1":844,"start2":844,"length1":16,"length2":41}]],"length":901,"saved":false}
+{"ts":1371748197897,"patch":[[{"diffs":[[0,"liated w"],[1,"ith LNET Techn "],[0,"\n\n2013 L"]],"start1":869,"start2":869,"length1":16,"length2":31}]],"length":916,"saved":false}
+{"ts":1371748198700,"patch":[[{"diffs":[[0,"ET Techn"],[-1," "],[1,"o"],[0,"\n\n2013 L"]],"start1":883,"start2":883,"length1":17,"length2":17}]],"length":916,"saved":false}
+{"ts":1371748200767,"patch":[[{"diffs":[[0,"T Techno"],[1,"logies "],[0,"\n\n2013 L"]],"start1":884,"start2":884,"length1":16,"length2":23}]],"length":923,"saved":false}
+{"ts":1371748202017,"patch":[[{"diffs":[[0,"nologies"],[-1," "],[0,"\n\n2013 L"]],"start1":890,"start2":890,"length1":17,"length2":16}]],"length":922,"saved":false}
+{"ts":1371748202786,"patch":[[{"diffs":[[0,"nologies"],[1,"."],[0,"\n\n2013 L"]],"start1":890,"start2":890,"length1":16,"length2":17}]],"length":923,"saved":false}
+{"ts":1371748209262,"patch":[[{"diffs":[[0,"necraft "],[-1,"or"],[1,"and"],[0," Mojang "]],"start1":834,"start2":834,"length1":18,"length2":19}]],"length":924,"saved":false}
+{"ts":1371748212106,"patch":[[{"diffs":[[0," Mojang "],[-1,"is"],[1,"are"],[0," in no w"]],"start1":845,"start2":845,"length1":18,"length2":19}]],"length":925,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1371749075617,"patch":[[{"diffs":[[0,"ogies.\n\n"],[1,"©"],[0,"2013 LNE"]],"start1":895,"start2":895,"length1":16,"length2":17}]],"length":926,"saved":false}
+{"ts":1371749077938,"patch":[[{"diffs":[[0,"gies.\n\n©"],[1," "],[0,"2013 LNE"]],"start1":896,"start2":896,"length1":16,"length2":17}]],"length":927,"saved":false}
