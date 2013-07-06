@@ -97,3 +97,8 @@
 {"ts":1373135682321,"patch":[[{"diffs":[[0," error('"],[1,"EX"],[0,"')\n     "]],"start1":985,"start2":985,"length1":16,"length2":18}]],"length":1357,"saved":false}
 {"ts":1373135686070,"patch":[[{"diffs":[[0,"r('E"],[-1,"X"],[1,"xecution failed!"],[0,"')\n "]],"start1":990,"start2":990,"length1":9,"length2":24}]],"length":1372,"saved":false}
 {"ts":1373135688164,"patch":[[{"diffs":[[0,"ailed!')"],[1," end"],[0,"\n       "]],"start1":1004,"start2":1004,"length1":16,"length2":20}]],"length":1376,"saved":false}
+{"ts":1373135743278,"patch":[[{"diffs":[[0,"..\"}"],[-1,"\\nprint('Demo')"],[0,"\"\n\t\t"]],"start1":802,"start2":802,"length1":23,"length2":8}]],"length":1361,"saved":false}
+{"ts":1373136445693,"patch":[[{"diffs":[[0,"Start = "],[-1,"tostring("],[0,"os.time("]],"start1":709,"start2":709,"length1":25,"length2":16}]],"length":1352,"saved":false}
+{"ts":1373136447169,"patch":[[{"diffs":[[0,"ime()*20"],[-1,")"],[0,"\n\t\tblock"]],"start1":721,"start2":721,"length1":17,"length2":16}]],"length":1351,"saved":false}
+{"ts":1373136461012,"patch":[[{"diffs":[[0,"d = "],[-1,"tostring("],[0,"ids)"]],"start1":678,"start2":678,"length1":17,"length2":8}]],"length":1342,"saved":false}
+{"ts":1373136462438,"patch":[[{"diffs":[[0,"kd = ids"],[-1,")"],[0,"\n\t\tlocal"]],"start1":677,"start2":677,"length1":17,"length2":16}]],"length":1341,"saved":false}
