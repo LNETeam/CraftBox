@@ -36,8 +36,8 @@ function block(ids,reg)
 		han:close()
 	else
 		if fs.exists("blacklist") then
-			os.run({},"blacklist")
-            if blocks['timed'] == nil or blocks['start'] == nil then
+			os.run({},"/blacklist")
+            if blocks.timed == nil or blocks.start == nil then
                 error('Ban write time') 
             end
 			add = blocks.timed+blocks.start
