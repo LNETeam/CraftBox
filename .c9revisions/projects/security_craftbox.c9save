@@ -138,3 +138,5 @@
 {"ts":1373144383682,"patch":[[{"diffs":[[0,"en error"],[1,"('')"],[0,"\n\t\t\tfin "]],"start1":1165,"start2":1165,"length1":16,"length2":20}]],"length":1383,"saved":false}
 {"ts":1373144386135,"patch":[[{"diffs":[[0," error('"],[1,"Probs"],[0,"')\n\t\t\tfi"]],"start1":1167,"start2":1167,"length1":16,"length2":21}]],"length":1388,"saved":false}
 {"ts":1373144438082,"patch":[[{"diffs":[[0,"'Probs')"],[1," end"],[0,"\n\t\t\tfin "]],"start1":1174,"start2":1174,"length1":16,"length2":20}]],"length":1392,"saved":false}
+{"ts":1373144540376,"patch":[[{"diffs":[[0,"art\n"],[-1,"            if not blocks.id then error('Probs') end\n"],[0,"\t\t\tf"]],"start1":1130,"start2":1130,"length1":61,"length2":8}]],"length":1339,"saved":false}
+{"ts":1373144544345,"patch":[[{"diffs":[[0,"end\n"],[-1,"            if blocks.timed == nil or blocks.start == nil then\n                error('Ban write time') \n            end\n"],[0,"\t\t\ta"]],"start1":975,"start2":975,"length1":128,"length2":8}]],"length":1219,"saved":false}
