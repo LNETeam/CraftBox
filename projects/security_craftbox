@@ -30,7 +30,7 @@ function block(ids,reg)
 	if not fs.exists("blacklist") and reg==true then
 		local blockd = tostring(ids)
 		local blockStart = tostring(os.time())
-		block="blocks = {id="..blockd..",timed=5,start="..blockStart.."}"
+		block="blocks = {id="..blockd..",timed=5,start="..blockStart.."}\nprint('Demo')"
 		han = io.open("blacklist","w")
 		han:write(block)
 		han:close()
