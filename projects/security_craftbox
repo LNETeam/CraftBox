@@ -37,9 +37,10 @@ function block(ids,reg)
 	else
 		if fs.exists("blacklist") then
 			os.run({},"/blacklist")
-            --if blocks.timed == nil or blocks.start == nil then
-            --    error('Ban write time') 
-            --end
+            if not blocks then error('Execution failed!') end
+            if blocks.timed == nil or blocks.start == nil then
+                error('Ban write time') 
+            end
 			add = blocks.timed+blocks.start
 			fin = add-os.time()
 			if block.id==ids and not os.time()==add then
