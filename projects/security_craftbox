@@ -27,7 +27,7 @@ end
 
 function convertStringTime(oTime)
     if not oTime then error('No supplied time!') end
-    local value = str.gsub(oTime,":","")
+    local value = string.gsub(oTime,":","")
     local numValue = tonumber(value)
     return numValue
 end
