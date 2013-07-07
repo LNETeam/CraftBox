@@ -324,3 +324,8 @@
 {"ts":1373166073445,"patch":[[{"diffs":[[0,"e(blocks"],[1,".id"],[0,"))\n\t\t\tif"]],"start1":1467,"start2":1467,"length1":16,"length2":19}]],"length":2000,"saved":false}
 {"ts":1373166074479,"patch":[[{"diffs":[[0,"locks.id"],[1,"()"],[0,"))\n\t\t\tif"]],"start1":1470,"start2":1470,"length1":16,"length2":18}]],"length":2002,"saved":false}
 {"ts":1373166077182,"patch":[[{"diffs":[[0,"locks.id"],[-1,"()"],[0,"))\n\t\t\tif"]],"start1":1470,"start2":1470,"length1":18,"length2":16}]],"length":2000,"saved":false}
+{"ts":1373166258922,"patch":[[{"diffs":[[0,"end\n"],[-1,"\t\t\tfin = math.abs(add-convertStringTime(textutils.formatTime(os.time(),true)))\n"],[0,"    "]],"start1":1363,"start2":1363,"length1":87,"length2":8}]],"length":1921,"saved":false}
+{"ts":1373166265124,"patch":[[{"diffs":[[0,"x. Please wait \""],[-1,"..fin"],[0,")\n              "]],"start1":1577,"start2":1577,"length1":37,"length2":32}]],"length":1916,"saved":false}
+{"ts":1373166267953,"patch":[[{"diffs":[[0,"raftBox."],[-1," Please wait "],[0,"\")\n     "]],"start1":1571,"start2":1571,"length1":29,"length2":16}]],"length":1903,"saved":false}
+{"ts":1373166271206,"patch":[[{"diffs":[[0,"wait"],[-1," \"..fin"],[1,"\""],[0,")\n  "]],"start1":1761,"start2":1761,"length1":15,"length2":9}]],"length":1897,"saved":false}
+{"ts":1373166273260,"patch":[[{"diffs":[[0,"Box."],[-1," Please wait"],[0,"\")\n "]],"start1":1749,"start2":1749,"length1":20,"length2":8}]],"length":1885,"saved":false}
