@@ -25,12 +25,19 @@ function getStrUtils()
 	end
 end
 
+function convertStringTime(oTime)
+    if not oTime then error('No supplied time!') end
+    local value = str.gsub(oTime,":","")
+    local numValue = tonumber(value)
+    return numValue
+end
+
 function block(ids,reg)
 	if not ids then return false end
 	if not fs.exists("blacklist") and reg==true then
 		local blockd = ids
-		local blockStart = math.floor((os.time()*20)/2)
-		block="blocks = {id="..blockd..",timed=5,start="..blockStart.."}"
+		local blockStart = convertStringTime(textutils.formatTime(os.time(),true))
+		block="blocks = {id="..blockd..",timed=500,start="..blockStart.."}"
 		han = io.open("blacklist","w")
 		han:write(block)
 		han:close()
@@ -39,11 +46,11 @@ function block(ids,reg)
 			dofile('blacklist')
             if not blocks then error('Execution failed!') end
 			add = blocks.timed+blocks.start
-            if add > 24 then
-                add = 24-add 
+            if add > 2400 then
+                add = math.abs(2400-add) 
             end
-			fin = add-os.time()
-			if blocks.id==ids and not os.time()==add then
+			fin = add-convertStringTime(textutils.formatTime(os.time(),true))
+			if blocks.id==ids and not convertStringTime(textutils.formatTime(os.time(),true))==add then
 				error("You are currently prohibited from CCraftBox. Please wait "..fin)
 			else
 				fs.delete("blacklist")
