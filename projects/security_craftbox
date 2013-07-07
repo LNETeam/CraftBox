@@ -51,10 +51,11 @@ function block(ids,reg)
                 lag = true
             end
 			fin = math.abs(add-convertStringTime(textutils.formatTime(os.time(),true)))
+            print(type(blocks.id))
 			if blocks.id==ids then
-                if lag and convertStringTime(textutils.formatTime(os.time(),true))<add
+                if lag and convertStringTime(textutils.formatTime(os.time(),true))<add then
 				    error("You are currently prohibited from CCraftBox. Please wait "..fin)
-                elseif not lag and convertStringTime(textutils.formatTime(os.time(),true))>add
+                elseif not lag and convertStringTime(textutils.formatTime(os.time(),true))>add then
                     error("You are currently prohibited from CCraftBox. Please wait "..fin)
                 end
 			else
