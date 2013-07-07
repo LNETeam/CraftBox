@@ -38,7 +38,10 @@ function block(ids,reg)
 		if fs.exists("/blacklist") then
 			dofile('blacklist')
             if not blocks then error('Execution failed!') end
-			add = blocks.timed*5/24+blocks.start
+			add = blocks.timed+blocks.start
+            if add > 24 then
+                add = 24-add 
+            end
 			fin = add-os.time()
 			if blocks.id==ids and not os.time()==add then
 				error("You are currently prohibited from CCraftBox. Please wait "..fin)
