@@ -53,6 +53,7 @@ function block(ids,reg)
 			if blocks.id==ids and not convertStringTime(textutils.formatTime(os.time(),true))==add then
 				error("You are currently prohibited from CCraftBox. Please wait "..fin)
 			else
+                testutils.slowPrint('System OK...')
 				fs.delete("blacklist")
 			end
 		end
