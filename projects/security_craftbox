@@ -47,11 +47,16 @@ function block(ids,reg)
             if not blocks then error('Execution failed!') end
 			add = blocks.timed+blocks.start
             if add > 2400 then
-                add = math.abs(2400-add) 
+                add = math.abs(2400-add)
+                lag = true
             end
-			fin = add-convertStringTime(textutils.formatTime(os.time(),true))
-			if blocks.id==ids and not convertStringTime(textutils.formatTime(os.time(),true))>add then
-				error("You are currently prohibited from CCraftBox. Please wait "..fin)
+			fin = math.abs(add-convertStringTime(textutils.formatTime(os.time(),true)))
+			if blocks.id==ids then
+                if lag and convertStringTime(textutils.formatTime(os.time(),true))<add
+				    error("You are currently prohibited from CCraftBox. Please wait "..fin)
+                elseif not lag and convertStringTime(textutils.formatTime(os.time(),true))>add
+                    error("You are currently prohibited from CCraftBox. Please wait "..fin)
+                end
 			else
                 textutils.slowPrint('System OK...')
 				fs.delete("blacklist")
