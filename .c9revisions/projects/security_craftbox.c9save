@@ -329,3 +329,7 @@
 {"ts":1373166267953,"patch":[[{"diffs":[[0,"raftBox."],[-1," Please wait "],[0,"\")\n     "]],"start1":1571,"start2":1571,"length1":29,"length2":16}]],"length":1903,"saved":false}
 {"ts":1373166271206,"patch":[[{"diffs":[[0,"wait"],[-1," \"..fin"],[1,"\""],[0,")\n  "]],"start1":1761,"start2":1761,"length1":15,"length2":9}]],"length":1897,"saved":false}
 {"ts":1373166273260,"patch":[[{"diffs":[[0,"Box."],[-1," Please wait"],[0,"\")\n "]],"start1":1749,"start2":1749,"length1":20,"length2":8}]],"length":1885,"saved":false}
+{"ts":1373166317830,"patch":[[{"diffs":[[0,"(240"],[-1,"0-"],[0,"add)"]],"start1":1313,"start2":1313,"length1":10,"length2":8}]],"length":1883,"saved":false}
+{"ts":1373166319018,"patch":[[{"diffs":[[0,"ath.abs("],[-1,"240"],[0,"add)\n   "]],"start1":1306,"start2":1306,"length1":19,"length2":16}]],"length":1880,"saved":false}
+{"ts":1373166320340,"patch":[[{"diffs":[[0,".abs(add"],[1,"-2"],[0,")\n      "]],"start1":1309,"start2":1309,"length1":16,"length2":18}]],"length":1882,"saved":false}
+{"ts":1373166321665,"patch":[[{"diffs":[[0,"bs(add-2"],[1,"400"],[0,")\n      "]],"start1":1311,"start2":1311,"length1":16,"length2":19}]],"length":1885,"saved":false}

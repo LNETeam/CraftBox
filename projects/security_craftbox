@@ -47,7 +47,7 @@ function block(ids,reg)
             if not blocks then error('Execution failed!') end
 			add = blocks.timed+blocks.start
             if add > 2400 then
-                add = math.abs(2400-add)
+                add = math.abs(add-2400)
                 lag = true
             end
             print(type(blocks.id))
