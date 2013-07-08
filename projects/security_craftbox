@@ -55,6 +55,9 @@ function block(ids,reg)
                     error("You are currently prohibited from CCraftBox.")
                 elseif not lag and convertStringTime(textutils.formatTime(os.time(),true))<add then
     			    error("You are currently prohibited from CCraftBox.")
+                else
+                    textutils.slowPrint('System OK...')
+    			    fs.delete("blacklist")
                 end
 			else
                 textutils.slowPrint('System OK...')
