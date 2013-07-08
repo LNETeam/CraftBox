@@ -80,7 +80,7 @@ if nope==false then
 	security_craftbox.block(os.getComputerID(),true)
 	term.clear()
 	term.setCursorPos(1,1)
--   shell.run("shell")
+    shell.run("shell")
 end
 
 if logged_in then
