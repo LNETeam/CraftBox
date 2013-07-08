@@ -1,7 +1,6 @@
 --Developed by LNETeam from LNET Technologies
 
 function tryCount(count)
-    print(count)
 	count=tonumber(count)
 	local base=5 --Change based on how many login attempts you want...
 	if count < base then
