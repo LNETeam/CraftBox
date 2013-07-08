@@ -79,8 +79,10 @@ if nope==false then
 	sleep(5)
 	security_craftbox.block(os.getComputerID(),true)
 	term.clear()
-	term.setCursorPos(1,1)
-	shell.run("shell")
+	x = api_craftbox.getCenterX('You are currently suspended from using CC-CraftBox :C')
+    term.setCursorPos(x,1)
+    print('You are currently suspended from using CC-CraftBox :C')
+    error()
 end
 
 if logged_in then
