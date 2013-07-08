@@ -56,7 +56,7 @@ while true do
 		if p[1] == 'key' and p[2]~=keys.y then
 			sleep(.5)
 			shell.run(shell.getRunningProgram(),textutils.serialize(sArgs),"no")
-		elseif p[1] == 'key' and p[2] == keys.y then
+		elseif p[1] == 'key' and p[2] == keys.n then
 			sleep(.5)
 			term.clear()
 			term.setCursorPos(1,1)
