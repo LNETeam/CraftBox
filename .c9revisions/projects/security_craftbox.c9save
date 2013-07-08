@@ -355,3 +355,6 @@
 {"ts":1373246188051,"patch":[[{"diffs":[[0,"hen\n"],[-1,"                \n"],[0,"    "]],"start1":1755,"start2":1755,"length1":25,"length2":8}]],"length":1953,"saved":false}
 {"ts":1373246270078,"patch":[[{"diffs":[[0,"rs.red)\n"],[-1,"\t"],[1,"    "],[0,"\t\t\t    p"]],"start1":1562,"start2":1562,"length1":17,"length2":20}]],"length":1956,"saved":false}
 {"ts":1373246275978,"patch":[[{"diffs":[[0,"    "],[-1,"t"],[0,"er"],[-1,"m.setTextColor(colors.red)\n    \t\t\t    print"],[1,"ror"],[0,"(\"Yo"]],"start1":1536,"start2":1536,"length1":54,"length2":13},{"diffs":[[0,".\")\n"],[-1,"                    return\n"],[0,"    "]],"start1":1590,"start2":1590,"length1":35,"length2":8}]],"length":1888,"saved":false}
+{"ts":1373246769249,"patch":[[{"diffs":[[0,"ks.id))\n"],[1,"            \n"],[0,"\t\t\tif bl"]],"start1":1394,"start2":1394,"length1":16,"length2":29}]],"length":1901,"saved":false}
+{"ts":1373246771858,"patch":[[{"diffs":[[0,"        "],[1,"sleep("],[0,"\n\t\t\tif b"]],"start1":1406,"start2":1406,"length1":16,"length2":22}]],"length":1907,"saved":false}
+{"ts":1373246772711,"patch":[[{"diffs":[[0,"  sleep("],[1,"5)"],[0,"\n\t\t\tif b"]],"start1":1412,"start2":1412,"length1":16,"length2":18}]],"length":1909,"saved":false}
