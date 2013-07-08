@@ -53,13 +53,9 @@ function block(ids,reg)
             print(type(blocks.id))
 			if blocks.id==ids then
                 if lag and convertStringTime(textutils.formatTime(os.time(),true))>add then
-                    term.setTextColor(colors.red)
-				    print("You are currently prohibited from CCraftBox.")
-                    return
+                    error("You are currently prohibited from CCraftBox.")
                 elseif not lag and convertStringTime(textutils.formatTime(os.time(),true))<add then
-                    term.setTextColor(colors.red)
-    			    print("You are currently prohibited from CCraftBox.")
-                    return
+    			    error("You are currently prohibited from CCraftBox.")
                 end
 			else
                 textutils.slowPrint('System OK...')
