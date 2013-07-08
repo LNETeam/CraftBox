@@ -50,8 +50,6 @@ function block(ids,reg)
                 add = math.abs(add-2400)
                 lag = true
             end
-            print(type(blocks.id))
-            sleep(5)
 			if blocks.id==ids then
                 if lag and convertStringTime(textutils.formatTime(os.time(),true))>add then
                     error("You are currently prohibited from CCraftBox.")
