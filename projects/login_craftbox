@@ -53,10 +53,10 @@ while true do
 		print(can)
         timer = os.startTimer(3)
 		p = {os.pullEvent()}
-		if p[1] == 'key' and p[2]~=keys.y then
+		if p[1] == 'key' and p[2]~=keys.n then
 			sleep(.5)
 			shell.run(shell.getRunningProgram(),textutils.serialize(sArgs),"no")
-		elseif p[1] == 'key' and p[2] == keys.n then
+		elseif p[1] == 'key' and p[2] == keys.y then
 			sleep(.5)
 			term.clear()
 			term.setCursorPos(1,1)
