@@ -1,0 +1,37 @@
+os.loadAPI("api_craftbox")
+
+--Local Variables
+local contex = nil
+local def_BGCol = 256
+local def_TextCol = colors.white
+local def_MenuCol = 128
+local def_ToolBarCol = colors.red
+local mw,mh = term.getSize()
+local def_ToolPic = ".def_toolPic"
+local def_wallPaper = ".def_wall"
+local shortcuts = {p2p=".app_p2pi",fs=".app_fsi",cf=".app_configi"}
+local session = tArgs{...}
+local session_storage = session[1]
+local server_vars = session[2]
+local imgSize "1:1" --Do not change this unless you know exactly what it does
+
+local function drawDesktop()
+   term.setBackgroundColor(def_BGCol)
+   term.clear()
+   term.setCursorPos(1,mh)
+   term.setBackGroundColor(def_ToolBarCol)
+   term.ClearLine()
+   local toolImg = paintutils.loadImage(def_ToolPic)
+   paintutils.drawImage(toolImg,1,1)
+   term.setTextColor(def_TextCol)
+   term.setCursorPos(mw-string.len(os.time()),mh)
+   print(os.time())
+   local deskImg = paintutils.loadImage(def_wallpaper)
+   paintutils.drawImage(deskImg,1,1)
+   
+end
+
+local function CleanRatio(ratio)
+   
+   return ratio.gsub(":","") 
+end
