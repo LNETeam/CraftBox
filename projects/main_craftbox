@@ -8,7 +8,7 @@ if not http then
    error('Please enable HTTP API in configuration file.')
 end
 
-Loads necessary APIs
+--Loads necessary APIs
 os.loadAPI("api_craftbox") Default APIs
 os.loadAPI("cn_craftbox") Rednet APIs
 
@@ -49,8 +49,8 @@ function startup()
     end
     zWait = zWait+1
     sleep(.0001)
-  until zWait == 10 Adjust timing here!
-  if zWait == 10 then This is equal to the above line
+  until zWait == 10 --Adjust timing here!
+  if zWait == 10 then --This is equal to the above line
     term.setCursorPos(x,y)
     term.setTextColor(colors.red)
     term.write(" Failed to contact nearest server!")
