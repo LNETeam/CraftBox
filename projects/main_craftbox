@@ -9,8 +9,8 @@ if not http then
 end
 
 --Loads necessary APIs
-os.loadAPI("api_craftbox") Default APIs
-os.loadAPI("cn_craftbox") Rednet APIs
+os.loadAPI("api_craftbox") --Default APIs
+os.loadAPI("cn_craftbox") --Rednet APIs
 
 cn_craftbox.openRednet()
 
@@ -19,7 +19,7 @@ function resetCol()
 end
 
 function requestServer()
-  serverID, serverName = cn_craftbox.requestBroadcast("server_socket",3) edit timing for server response time
+  serverID, serverName = cn_craftbox.requestBroadcast("server_socket",3) --edit timing for server response time
   if not serverID then
     return false
   else
