@@ -32,6 +32,7 @@ nodeList['login_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projec
 nodeList['main_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/main_craftbox'
 nodeList['peer_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/peer_craftbox'
 nodeList['security_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/security_craftbox'
+nodeList['home_craftbox'] = 'https://raw.github.com/LNETeam/CraftBox/dev/projects/home_craftbox'
 
 stat = objectLoadNode(nodeList)
 if not stat then error('Function execution error') end
