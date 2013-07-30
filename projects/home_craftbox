@@ -37,14 +37,14 @@ local function drawDesktop()
    paintutils.drawImage(deskImg,1,1)
 end
 --Strip ratio colons for use as table elements
-local function CleanRatio(ratio)
-   local _tRatio = {}
-   return _tRatio = string.gmatch(ratio,":","%S+") 
-end
+-- local function CleanRatio(ratio)
+--    local _tRatio = {}
+--    return _tRatio = string.gmatch(ratio,":","%S+") 
+-- end
 
-local function drawIconMap(indexMap)
-    local paths = {}
-    for k,v in pairs(indexMap) do
+-- local function drawIconMap(indexMap)
+--     local paths = {}
+--     for k,v in pairs(indexMap) do
          
-    end
-end
+--     end
+-- end
