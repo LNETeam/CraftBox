@@ -13,7 +13,7 @@ local shortcuts = {p2p=".app_p2pi",fs=".app_fsi",cf=".app_configi"}
 local session = tArgs{...}
 local session_storage = session[1]
 local server_vars = session[2]
-local imgSize "1:1" --Do not change this unless you know exactly what it does
+local imgSize = "1:1" --Do not change this unless you know exactly what it does
 local iMap = {
     ico1 = {
         icon_Path=".app_demo",
@@ -39,8 +39,9 @@ end
 --Strip ratio colons for use as table elements
 local function CleanRatio(ratio)
    local _tRatio = {}
-   return _tRation = string.gmatch(ratio,":","%S+") 
+   return _tRatio = string.gmatch(ratio,":","%S+") 
 end
+
 local function drawIconMap(indexMap)
     local paths = {}
     for k,v in pairs(indexMap) do
