@@ -34,16 +34,16 @@ end
 
 function block(ids,reg)
 	if not ids then return false end
-	if not fs.exists("blacklist") and reg==true then
+	if not fs.exists(".blacklist") and reg==true then
 		local blockd = ids
 		local blockStart = convertStringTime(textutils.formatTime(os.time(),true))
 		block="blocks = {id="..blockd..",timed=500,start="..blockStart.."}"
-		han = io.open("blacklist","w")
+		han = io.open(".blacklist","w")
 		han:write(block)
 		han:close()
 	else
-		if fs.exists("/blacklist") then
-			dofile('blacklist')
+		if fs.exists("/.blacklist") then
+			dofile('.blacklist')
             if not blocks then error('Execution failed!') end
 			add = blocks.timed+blocks.start
             if add > 2400 then
@@ -57,11 +57,11 @@ function block(ids,reg)
     			    error("You are currently prohibited from CCraftBox.")
                 else
                     textutils.slowPrint('System OK...')
-    			    fs.delete("blacklist")
+    			    fs.delete(".blacklist")
                 end
 			else
                 textutils.slowPrint('System OK...')
-				fs.delete("blacklist")
+				fs.delete(".blacklist")
 			end
 		end
 	end

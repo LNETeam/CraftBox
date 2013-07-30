@@ -43,5 +43,5 @@ function openRednet()
 end
 
 function authenticate(usrID,pass)
-	return false
+	return true
 end
