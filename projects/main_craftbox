@@ -3,7 +3,7 @@
 pID = os.getComputerID()
 server = {}
 
-Require http protocol to be Enabled
+--Require http protocol to be Enabled
 if not http then
    error('Please enable HTTP API in configuration file.')
 end

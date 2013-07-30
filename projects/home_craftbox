@@ -14,6 +14,13 @@ local session = tArgs{...}
 local session_storage = session[1]
 local server_vars = session[2]
 local imgSize "1:1" --Do not change this unless you know exactly what it does
+local iMap = {
+    ico1 = {
+        icon_Path=".app_demo",
+        iconplaceX=1,
+        iconplaceY=1,
+    },    
+}
 
 local function drawDesktop()
    term.setBackgroundColor(def_BGCol)
@@ -28,10 +35,15 @@ local function drawDesktop()
    print(os.time())
    local deskImg = paintutils.loadImage(def_wallpaper)
    paintutils.drawImage(deskImg,1,1)
-   
 end
-
+--Strip ratio colons for use as table elements
 local function CleanRatio(ratio)
-   
-   return ratio.gsub(":","") 
+   local _tRatio = {}
+   return _tRation = string.gmatch(ratio,":","%S+") 
+end
+local function drawIconMap(indexMap)
+    local paths = {}
+    for k,v in pairs(indexMap) do
+         
+    end
 end
