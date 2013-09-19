@@ -92,6 +92,10 @@ objects.del = "[Delete]"
 objects.clrFile = "[Clear All?]"
 objects.login = "[Login]"
 
+function returnKeyLength(objName)
+    return objects[objName].len
+end
+
 function returnKey(objName)
 	if not objName then return 'No such object' end
 	c = objects[objName]
