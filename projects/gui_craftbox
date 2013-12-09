@@ -32,7 +32,7 @@ function genPass(string)
 	local yx,xy = term.getCursorPos()
 	session.y=xy
 	session.x=yx
-	return pass --Goof
+	return pass
 end
 
 function runMenuH(mChoices)
